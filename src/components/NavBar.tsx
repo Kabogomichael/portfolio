@@ -59,14 +59,14 @@ function NavBar({ darkMode, toggleDarkMode }: Mode) {
     setIsMenuOpen(false);
   };
   return (
-    <div className="flex justify-center w-full fixed z-50  md:mt-4">
+    <div className="flex justify-center w-screen fixed z-50  md:mt-4">
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
         className={`flex items-center justify-center ${color.navBg} backdrop-blur-lg rounded-2xl px-4 lg:px-8 py-2 shadow-lg`}
       >
-        <div className="flex items-center justify-between w-87.5 md:w-150 lg:w-full space-x-6 lg:space-x-8">
+        <div className="flex items-center justify-between w-screen md:w-150 lg:w-full space-x-6 lg:space-x-8">
           <motion.a
             href="/"
             whileHover={{ scale: 1.05 }}
@@ -76,7 +76,7 @@ function NavBar({ darkMode, toggleDarkMode }: Mode) {
               portfolio <span className="text-red-500">.</span>
             </span>
           </motion.a>
-          
+
           <div className="hidden lg:flex items-center space-x-6 ">
             {navLinks.map((item) => (
               <Link

@@ -4,7 +4,6 @@ import contact from "../assets/contact.jpg"
 function Contact({ darkMode }: Mode) {
   return (
     <div
-      id="contact"
      className="lg:relative"
     >
            
