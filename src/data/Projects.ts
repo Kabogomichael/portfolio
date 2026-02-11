@@ -1,4 +1,3 @@
-import { ExternalLink } from "lucide-react";
 // import { Github } from "lucide-react";
 import github from "../assets/github.png";
 import movieapp from "../assets/movieapp.jpeg";

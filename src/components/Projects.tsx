@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Projects } from "../data/Projects";
 import { motion } from "framer-motion";
 import type { Mode } from "./NavBar";
