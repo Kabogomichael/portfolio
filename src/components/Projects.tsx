@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import type { Mode } from "./NavBar";
 function Project({ darkMode }: Mode) {
   return (
-    <div className="flex  flex-col  justify-center items-center h-screen ">
+    <div className="flex  flex-col  justify-center items-center md:h-screen  gap-10 md:gap-0 ">
         <h2>My projects</h2>
     <div className="grid lg:grid-cols-4 grid-cols-1  md:grid-cols-2   ">
       {Projects.map((project) => (

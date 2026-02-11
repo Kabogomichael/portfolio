@@ -2,7 +2,7 @@ import { Skills } from "../data/Projects";
 import type { Mode } from "./NavBar";
 function Skill({ darkMode }: Mode) {
   return (
-    <div className="flex justify-center items-center h-screen flex-col  ">
+    <div className="flex justify-center items-center md:h-screen flex-col pb-4 md:pb-0  ">
         <h2 className="text-3xl font-bold mb-10 ">My skills</h2>
       <div
         className={`grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2  lg:gap-10 gap-4 `}

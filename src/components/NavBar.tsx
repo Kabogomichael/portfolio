@@ -76,6 +76,7 @@ function NavBar({ darkMode, toggleDarkMode }: Mode) {
               portfolio <span className="text-red-500">.</span>
             </span>
           </motion.a>
+          
           <div className="hidden lg:flex items-center space-x-6 ">
             {navLinks.map((item) => (
               <Link
@@ -133,6 +134,8 @@ function NavBar({ darkMode, toggleDarkMode }: Mode) {
               hire me
              
             </motion.a>
+
+
             {/* mobile menu button */}
             <div className="flex lg:hidden items-center space-x-4 px-2 ">
               <motion.button
@@ -173,7 +176,7 @@ function NavBar({ darkMode, toggleDarkMode }: Mode) {
           >
             <div className="px-4  py-3 space-y-2">
               {navLinks.map((link) => (
-                <a href={link.link} key={link.text} className="block">
+                <Link to={link.link} key={link.text} className="block">
                   <motion.div
                     whileHover={{ x: 5 }}
                     className={`py-3 px-4 rounded-lg text-center hover:text-yellow-300 ${
@@ -194,7 +197,7 @@ function NavBar({ darkMode, toggleDarkMode }: Mode) {
                       {link.text}
                     </span>
                   </motion.div>
-                </a>
+                </Link>
               ))}
               <motion.a
                 href="contact"
