@@ -6,7 +6,7 @@ import youtube from "../assets/YouTube_full-color_icon_(2017).svg.png";
 import tiktok from "../assets/tiktok.jpg";
 import hero from "../assets/hero.png";
 import hi from "../assets/hi.png";
-
+import resum from "../Resume.pdf"
 interface Theme {
   textPrimary: string;
   textSecondary: string;
@@ -107,7 +107,7 @@ const Hero = ({ darkMode}: Mode) => {
                 data-aos="fade-up"
                 data-aos-delay="700"
               >
-                <a href="/" download className="w-full sm:w-auto  ">
+                <a href={resum } download className="w-full sm:w-auto  ">
                   <button
                     className="w-full cursor-pointer sm:w-auto inline-flex items-center justify-center text-white bg-linear-to-r from-orange-500 to-amber-500  hover:shadow-[0_0_40px_rgba(255,165,0,0.7)]
  border-0 py-3 px-6 sm:px-8  rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform"
